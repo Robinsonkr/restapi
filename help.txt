@@ -1,0 +1,7 @@
+pip install django
+django-admin startproject myproject
+pip install djangorestframework
+python manage.py shell
+>>> from base.models import Item
+>>> Item.objects.create(name="apple")
+>>> items = Item.objects.all()
